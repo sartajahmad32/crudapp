@@ -1,0 +1,22 @@
+<h1>Show All Employee</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+      <th scope="col">Pno</th>
+    </tr>
+  </thead>
+  <tbody>
+      {{#each list}}
+    <tr class="table-active">
+      <th scope="row">{{this.empname}}</th>
+      <td>{{this.empmail}}</td>
+      <td>{{this.empaddress}}</td>
+      <td>{{this.empno}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

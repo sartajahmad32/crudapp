@@ -1,0 +1,23 @@
+<form method="post" action="/addEmp">
+    <h1>Add Employee</h1>
+    <br/>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter Employee name" name="name" value="{{employee.empname}}" >
+    </div>
+    <br/>
+    <div class="form-group">
+        <input type="email" class="form-control" placeholder="Enter Employee Email Address" name="email" value={{employee.empmail}} >
+    </div>
+    <br/>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter Employee Phone Number" name="pno" value="{{employee.empno}}">
+    </div>
+    <br/>
+    <div class="form-group">
+        <textarea class="form-control" placeholder="Enter the Address" name="address"> {{employee.empaddress}}</textarea>
+
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
